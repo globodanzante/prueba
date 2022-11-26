@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="layouts.css">
-  <title>Document</title>
+  <title>Portfólio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
@@ -44,7 +44,8 @@
     <div class="avatar">
       <img src="imagenes/ale.jpg" alt="mi foto" class="avatar__imagem">
         <span class="github">
-      <a href="https://github.com/globodanzante"><img src="imagenes/git.png" alt="github" width="50px" height="50px"></a>
+        <a href="#"></a>
+        <img src="imagenes/git.png" alt="github" width="50px" height="50px">
         </span>
         <span class="linkedin">
          <a href="https://www.linkedin.com/in/alejandra-delgado-b23266159/"><img src="imagenes/image.png" alt="linkedin" width="50px" height="50px"></a>
@@ -81,7 +82,7 @@
   </section>
   </main>
   <main class="conteudo3">
-    <article>
+    <div>
       <h2 id="Formaçao" class="card__titulo">Formação</h2>      
       <div class=" formacao">
           <div class=" formacao__img">    
@@ -119,7 +120,7 @@
         </p>
         </div>
     </div>  
-    </article>
+    </div>
 
   </main>
   <main class="conteudo4">
@@ -145,30 +146,27 @@
 </main>
 <main class="conteudo5">
 <section >
-      <h2 id="Projetos" 
-      class="card__titulo">Projetos</h2>
-   <div class="project">
+      <h2 id="Projetos" class="card__titulo">Projetos</h2>
+<div class="project">
   <div class="card1">
-      <div class="card">
-        <a href="#">
-        <img src="imagenes/2022-10-28 (3).png" alt="foto de Receta" class="card_imagem">
-        <div class="card__info">
-          <span class="title__card">Receta</span>
-          <span class="card__data">Oct 2022</span>
-          <span class="card__conteudo">É um de meus primeiros projetos, nesta card só presento <strong> html </strong> mas adelate presentare o final com  <strong>css</strong> </span>
-      
-         <div class="botones">
-          <a href="#" class="botom_1">Repositorio</a>
-          <a href="#" class="botom_2">Ver demo</a>
-         </div>
-        </div>
-        </a>
+    <div class="card">
+      <img src="imagenes/2022-10-28 (4).png" alt="foto de Receta" class="card_imagem" height="35%">
+      <div class="card__info">
+        <span class="title__card">Roblox=x</span>
+        <span class="card__data">Oct 2022</span>
+        <span class="card__conteudo">Aquí fiz meu primeira prática foi feita em espanhol em <strong> html/css </strong> é um exercicio que colocaram na aula para nosso aprendizagem</span>
+    
+       <div class="botones">
+        <a href="#" class="botom_1">Repositorio</a>
+        <a href="#" class="botom_2">Ver demo</a>
+       </div>
       </div>
-  </div>
+      </a>
+    </div>
+</div>
   <div class="card2">
       <div class="card">
-        <a href="#">
-        <img src="imagenes/2022-10-28 (4).png" alt="foto de Receta" class="card_imagem2" height="35%">
+        <img src="imagenes/2022-10-28 (4).png" alt="foto de Receta" class="card_imagem" height="35%">
         <div class="card__info">
           <span class="title__card">Formulario</span>
           <span class="card__data">Oct 2022</span>
@@ -184,7 +182,6 @@
   </div>
   <div class="card3">
       <div class="card">
-        <a href="#">
         <img src="imagenes/2022-10-28 (5).png" alt="foto de Receta" class="card_imagem" height="35%">
         <div class="card__info">
           <span class="title__card">Portfólio</span>
@@ -201,7 +198,6 @@
   </div>
   <div class="card4">
       <div class="card">
-        <a href="#">
         <img src="imagenes/2022-10-28 (3).png" alt="foto de Receta" class="card_imagem">
         <div class="card__info">
           <span class="title__card">Receta</span>
@@ -213,7 +209,6 @@
           <a href="#" class="botom_2">Ver demo</a>
          </div>
         </div>
-        </a>
       </div>
   </div>
 </div>      
@@ -224,31 +219,44 @@
     <h2 id="Fala" class="card__titulo">Fala comigo!</h2>
   <div class="fala">
     <div class="card_1">
-      <main class="card2">
+      <div class="card2">
         <img src="imagenes/alejandra.jpg" alt="nombre" width="200px" height="50px">
 
         <h2 class="formulario">Convida a enviar seus datos</h2>
       
-  
-        <form action="formulario">
-          <input type='text' name='nombre' placeholder='Nome Completo'>
-          <input type='text' name='nombre' placeholder='Telefone'>
-          <input type='text' name='nombre' placeholder='Email'>
-          <textarea name="mensaje" placeholder='Digite sua mensagem'></textarea>
-          <button>ENVIAR</button>
+        <form>
+          <label>
+            <input type="text" name="nombre" placeholder="Digite seu nome" id="name" class="required" oninput="nameValidade()">
+            <span class="span-required">Nome debe ter mínimo 3 caracteres</span>
+          </label>
+          <label>
+            <input type='text' name='email' placeholder='Digite seu email' id="email"
+            class="required" oninput="emailValidade()">
+            <span class="span-required">Digite um email válido</span>
+          </label>
+          <label>
+            <input type='text' name='tlf' placeholder='Digite seu telefone' id="tlf" class=" required" oninput="telefoneValidade()">
+            <span class="span-required">Digite um telefone válido</span>
+          </label>
+            <textarea name="mensaje" placeholder='Digite sua mensagem'></textarea>
+          <button type="button" id="clickbotom">ENVIAR</button>
         </form>
-      </main>    
+      </div>    
     </div>
 
   <div class="contato">
     <div class="info">
-      <p>Gostaria de recibir informação</p>
-        <input type="radio" id="informaçao" name="informacao" value="sim" required>
-        <label for="sim">sim</label>
-        <input type="radio" id="informaçao" name="informacao" value="nao" required>
-        <label for="no">não</label>
-         <button>ENVIAR</button>
+      <input type="submit" value="Buscar mi repositorio" id="repos"><br>
+          <label for="lang">Repositorio Github</label><br>
+          <select name="lenguajes" id="lang" >
+            <option value="selecciona">Meus projetos</option>
+            <option class="link1" id="Repos1"><option>
+            <option class="link2" id="Repos2"></option>
+            <option class="link3" id="Repos3"></option>
+            <option class="link4" id="Repos4"></option>
+            <option class="link5" id="Repos5"></option>
     </div> 
+  <div>  
     <div class="logo_cont">
   
       <a href="https://www.facebook.com/Alejandra.Luna26"><img src="imagenes/facebook.png" alt="Facebook" width="53" height="53" ></a>
@@ -268,4 +276,6 @@
 </footer>
 
 </body>
+<script src="layouts.js"></script>
+
 </html>

@@ -140,21 +140,21 @@ justify-items: center;
   bottom:   -10px;
   display: flex; 
   align-items: center;
-justify-items: center;
+  justify-items: center;
 }
 .titulo {
   color:#db5bbb;
   font-size: 38px;
   position: relative;
- text-align: center;
- bottom: 160px;
+  text-align: center;
+  bottom: 160px;
  
 }
   .profession {
-    position: relative;
-    bottom: 175px;
-     color: darkgrey;
-     text-align: center;
+      position: relative;
+      bottom: 175px;
+      color: darkgrey;
+      text-align: center;
      
    }
 .conteudo2 {
@@ -362,6 +362,32 @@ padding: 20px 80px
   box-shadow: 2px -4px 6px  rgb(61, 59, 59);
   
 }
+
+#repos{
+  background-color: #661b73;
+  border: 1px solid #986d97;
+  padding: 3px 8px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  color: #d1c9dc;
+  box-shadow: 2px 2px 5px #554c55;
+  transition: .5s;
+  font-family: 'Fuzzy Bubbles';
+
+}
+select{
+  margin-top: 10px;
+  background-color: #a16bab;
+  border: 1px solid #856885;
+  padding: 3px 8px;
+  border-radius: 15px;
+  color: #d1c9dc;
+  box-shadow: 2px 2px 5px #554c55;
+  transition: .5s;
+  font-family: 'Fuzzy Bubbles';
+  font-size: 16px;
+}
+
 .formulario {
   text-align: center;
   font-size: 18px;
@@ -398,6 +424,12 @@ input, textarea {
   text-align: center;
   
 }
+.span-required{
+  display: none;
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: red;
+}
 
 textarea {
   height: 60px;
@@ -413,6 +445,7 @@ button{
   border: 1px solid #986d97;
   padding: 3px 8px;
   margin-left: 120px;
+  margin-top: 10px;
   border-radius: 15px;
   color: #d1c9dc;
   box-shadow: 2px 2px 5px #554c55;
@@ -494,6 +527,7 @@ display: block;
   margin-left: 30px;
 }
 }
+}
 
 @media screen and (max-width: 738px) {
 nav li {
@@ -558,3 +592,5 @@ nav li {
     
     
    }
+  }
+
